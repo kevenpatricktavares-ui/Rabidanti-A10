@@ -1,0 +1,8 @@
+Rabidanti Mobile Companion 5.9.1-a10
+Source project: READY FOR CI BUILD
+Target: Samsung Galaxy A10 / Android 9–11
+Embedded runtime: Rabidanti v5.9
+APK binary in this environment: NOT BUILT
+Reason: Android SDK, Gradle, AAPT2, D8, zipalign and apksigner are not installed here.
+CI workflow hardened to install pinned Android SDK 35/build-tools 35.0.0, build the APK, verify alignment/signature/package/minSdk, rename the artifact to Rabidanti-A10.apk, and record SHA-256.
+Physical-device installation and smoke test remain required before declaring device validation complete.

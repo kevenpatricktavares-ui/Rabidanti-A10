@@ -1,0 +1,33 @@
+plugins {
+    id 'com.android.application'
+}
+
+android {
+    namespace 'cv.rabidanti.mobile'
+    compileSdk 35
+
+    defaultConfig {
+        applicationId 'cv.rabidanti.mobile'
+        minSdk 28
+        targetSdk 35
+        versionCode 5901
+        versionName '5.9.1-a10'
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            shrinkResources false
+        }
+        debug {
+            applicationIdSuffix '.debug'
+            versionNameSuffix '-debug'
+        }
+    }
+
+    packaging {
+        resources {
+            excludes += ['META-INF/DEPENDENCIES', 'META-INF/LICENSE*', 'META-INF/NOTICE*']
+        }
+    }
+}
